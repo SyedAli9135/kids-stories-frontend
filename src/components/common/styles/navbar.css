@@ -1,0 +1,28 @@
+.navbar__responsive__menu {
+  margin-left: 30px;
+}
+
+.navbar__logo {
+  margin-left: 100px;
+}
+.navbar__toggler {
+  margin-right: 75px;
+}
+
+.navbar__btn__login {
+  margin-right: 10px;
+  border-radius: 25px;
+}
+.navbar__btn__signup {
+  margin-right: 100px;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar__responsive__menu {
+    margin-left: 100px !important;
+  }
+  .navbar__btn__login {
+    margin-left: 100px !important;
+  }
+}
