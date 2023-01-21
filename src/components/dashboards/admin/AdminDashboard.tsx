@@ -5,6 +5,7 @@ import group from "../../../assets/group.png";
 import { AdminProfile } from "./AdminProfile";
 import { AdminUsersList } from "./AdminUsersList";
 import { AdminSearchDetails } from "./AdminSearchDetails";
+import { Routes, Route, Link } from "react-router-dom";
 export const AdminDashboard: React.FC = () => {
   return (
     <>
@@ -14,37 +15,47 @@ export const AdminDashboard: React.FC = () => {
           className="nav justify-content-center"
         >
           <li className="nav-item">
-            <a
-              style={{ color: "whitesmoke", fontSize: "20px" }}
-              className="nav-link"
-              href="#"
-            >
-              <img src={profile} style={{ height: "35px" }} /> Profile
-            </a>
+            <Link to="adminprofile">
+              <a
+                style={{ color: "whitesmoke", fontSize: "20px" }}
+                className="nav-link"
+                href="#"
+              >
+                <img src={profile} style={{ height: "35px" }} /> Profile
+              </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              style={{ color: "whitesmoke", fontSize: "20px" }}
-              className="nav-link"
-              href="#"
-            >
-              <img src={group} style={{ height: "35px" }} /> Users
-            </a>
+            <Link to="adminuserslist">
+              <a
+                style={{ color: "whitesmoke", fontSize: "20px" }}
+                className="nav-link"
+                href="#"
+              >
+                <img src={group} style={{ height: "35px" }} /> Users
+              </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              style={{ color: "whitesmoke", fontSize: "20px" }}
-              className="nav-link"
-              href="#"
-            >
-              <img src={magnifier} style={{ height: "35px" }} /> Recent Searches
-            </a>
+            <Link to="adminsearchdetails">
+              <a
+                style={{ color: "whitesmoke", fontSize: "20px" }}
+                className="nav-link"
+                href="#"
+              >
+                <img src={magnifier} style={{ height: "35px" }} /> Recent
+                Searches
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
-      <div style={{ marginTop: "20px" }}>
-        <AdminSearchDetails />
-      </div>
+      <Routes>
+        <Route index element={<AdminProfile />} />
+        <Route path="adminprofile" element={<AdminProfile />} />
+        <Route path="adminuserslist" element={<AdminUsersList />} />
+        <Route path="adminsearchdetails" element={<AdminSearchDetails />} />
+      </Routes>
     </>
   );
 };

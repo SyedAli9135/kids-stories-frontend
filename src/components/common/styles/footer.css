@@ -1,0 +1,19 @@
+.footer__container {
+  margin-top: 20px;
+}
+.footer__container__content1,
+.footer__container__content2,
+.footer__container__content3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__link > button {
+  border: none;
+  border-radius: 5px;
+}
+.footer__link > button:hover {
+  background-color: red;
+  color: whitesmoke;
+}

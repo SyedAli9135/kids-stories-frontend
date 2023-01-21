@@ -17,6 +17,20 @@
   margin-right: 100px;
   border-radius: 25px;
 }
+.navbar__menu > button {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: none;
+}
+.navbar__menu > button:hover {
+  background-color: red;
+  color: white;
+}
+.navbar__dropdown__user {
+  margin-right: 100px;
+}
 
 @media only screen and (max-width: 991px) {
   .navbar__responsive__menu {
@@ -24,5 +38,17 @@
   }
   .navbar__btn__login {
     margin-left: 100px !important;
+  }
+  .navbar__dropdown1 {
+    width: 30px;
+  }
+  .navbar__dropdown__user {
+    margin-left: 130px !important;
+  }
+}
+
+@media only screen and (min-width: 1063px) and (max-width: 991px) {
+  .navbar__btn__login {
+    margin-left: none !important;
   }
 }

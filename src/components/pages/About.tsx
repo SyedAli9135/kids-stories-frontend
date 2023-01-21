@@ -1,11 +1,13 @@
 import React from "react";
 import "./styles/about.css";
+import aboutimg from "../../assets/about-img.png";
 export const About: React.FC = () => {
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <div>
-          <h3>ABOUT US</h3>
+      <div className="d-flex justify-content-center about__container">
+        <div className="about__container__img">
+          <img src={aboutimg} style={{ height: "400px", width: "700px" }} />
+          <h3 className="about__container__title">ABOUT US</h3>
         </div>
       </div>
       <div className="about__content">

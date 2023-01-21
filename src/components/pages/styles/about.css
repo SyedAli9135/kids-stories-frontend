@@ -1,5 +1,26 @@
 .about__content {
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 40px;
+}
+.about__container {
+  margin-top: 30px;
+}
+.about__container__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about__container__title {
+  position: relative;
+  bottom: 200px;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 716px) {
+  .about__container {
+    overflow: hidden;
+  }
 }

@@ -1,0 +1,47 @@
+.homepage__service {
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.homepage__aboutcontent {
+  border-radius: 20px;
+  background-color: red;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+#homepage__aboutcontent__text {
+  padding: 10px;
+}
+.homepage__aboutcontent:hover {
+  font-size: larger;
+  cursor: pointer;
+  opacity: 1;
+}
+.homepage__contentbtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage__contentbtns > #btn1,
+#btn2,
+#btn3,
+#btn4 {
+  margin: 10px;
+  border-radius: 15px;
+  background-color: red;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  opacity: 0.8;
+}
+.homepage__contentbtns > #btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover {
+  margin: 10px;
+  border-radius: 15px;
+  background-color: red;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-size: large;
+  opacity: 1;
+}

@@ -1,3 +1,9 @@
+.contact__main__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .contact__main__left__content {
   margin-top: 70px;
   margin-left: 75px;

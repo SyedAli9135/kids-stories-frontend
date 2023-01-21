@@ -93,7 +93,7 @@ export const Login: React.FC = () => {
 
         <Grid container justifyContent="flex-end">
           <Grid item>
-            <Link style={{ color: "black" }} href="signup" variant="body2">
+            <Link style={{ color: "black" }} href="register" variant="body2">
               {"Don't have an account? Sign Up"}
             </Link>
           </Grid>
