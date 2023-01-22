@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { useFormik } from "formik";
 import TextField from "@mui/material/TextField";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -175,8 +175,11 @@ export const Register: React.FC = () => {
           </Button>
           <Grid container justifyContent="flex-end">
             <Grid item>
-              <Link style={{ color: "black" }} href="login" variant="body2">
-                Already have an account? Sign in
+              <Link
+                style={{ textDecoration: "underline", color: "black" }}
+                to="/login"
+              >
+                Don't have an account? Sign Up
               </Link>
             </Grid>
           </Grid>

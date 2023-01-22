@@ -21,21 +21,21 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li className="nav-item mb-2 ">
-                <Link to="story">
+                <Link to="/story">
                   <a href="#" className="nav-link p-0 text-muted footer__link">
                     <button> Story</button>
                   </a>
                 </Link>
               </li>
               <li className="nav-item mb-2 ">
-                <Link to="about">
+                <Link to="/about">
                   <a href="#" className="nav-link p-0 text-muted footer__link">
                     <button>About Us</button>
                   </a>
                 </Link>
               </li>
               <li className="nav-item mb-2 ">
-                <Link to="contact">
+                <Link to="/contact">
                   <a href="#" className="nav-link p-0 text-muted footer__link">
                     <button>Contact Us</button>
                   </a>

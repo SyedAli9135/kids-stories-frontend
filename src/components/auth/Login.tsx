@@ -4,13 +4,15 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { useFormik } from "formik";
 import TextField from "@mui/material/TextField";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import { login } from "../../models/login.dto";
+import { useNavigate } from "react-router-dom";
 export const Login: React.FC = () => {
+  const navigate = useNavigate();
   const validationSchema = Yup.object().shape({
     username: Yup.string().min(3, "Its too short").required("Required"),
     password: Yup.string()
@@ -30,6 +32,7 @@ export const Login: React.FC = () => {
         password: values.password,
       };
       console.log("Login Credentials:", loginCredentials);
+      navigate("/");
     },
   });
   return (
@@ -93,8 +96,11 @@ export const Login: React.FC = () => {
 
         <Grid container justifyContent="flex-end">
           <Grid item>
-            <Link style={{ color: "black" }} href="register" variant="body2">
-              {"Don't have an account? Sign Up"}
+            <Link
+              style={{ textDecoration: "underline", color: "black" }}
+              to="/register"
+            >
+              Don't have an account? Sign Up
             </Link>
           </Grid>
         </Grid>

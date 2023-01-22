@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className="nav-item ">
-              <Link to="story">
+              <Link to="/story">
                 <a className="nav-link active navbar__menu" href="#">
                   <button> Story</button>
                 </a>
@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
               </a>
               <ul className="dropdown-menu navbar__dropdown1">
                 <li>
-                  <Link to="about">
+                  <Link to="/about">
                     <a
                       className="dropdown-item navbar__menu__dropdowncolor"
                       href="#"
@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="contact">
+                  <Link to="/contact">
                     <a
                       className="dropdown-item navbar__menu__dropdowncolor"
                       href="#"
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
               </ul>
             </li>
             <li className="nav-item  ">
-              <Link to="userdashboard">
+              <Link to="/userdashboard">
                 <a className="nav-link active navbar__menu" href="#">
                   <button> Dashboard</button>
                 </a>
@@ -96,7 +96,7 @@ export const Navbar: React.FC = () => {
               </a>
               <ul className="dropdown-menu navbar__dropdown__user">
                 <li>
-                  <Link to="login">
+                  <Link to="/login">
                     <a
                       className="dropdown-item navbar__menu__dropdowncolor__user"
                       href="#"
