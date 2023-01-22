@@ -37,8 +37,8 @@ export const Contact: React.FC = () => {
     },
   });
   return (
-    <div className="container container-fluid contact__main row">
-      <div className="col-8  contact__main__left">
+    <div className="container container-fluid contact__main ">
+      <div className="col  contact__main__left">
         <h3 className="contact__main__left__heading">Get in Touch with Us</h3>
         <div className="contact__main__left__content">
           <div className="col-5 mb-2">
@@ -55,10 +55,7 @@ export const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-      <div
-        style={{ marginTop: "70px" }}
-        className="col-4   contact__main__right"
-      >
+      <div style={{ marginTop: "70px" }} className="col   contact__main__right">
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <Box

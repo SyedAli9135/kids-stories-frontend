@@ -41,7 +41,7 @@ export const AdminProfile: React.FC = () => {
     },
   });
   return (
-    <Container component="main" maxWidth="xs">
+    <Container style={{ marginTop: "30px" }} component="main" maxWidth="xs">
       <CssBaseline />
       <Box
         sx={{

@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-column flex-sm-row justify-content-center  border-top">
+        <div className="d-flex flex-column flex-sm-row justify-content-center  border-top footer__copyright__text">
           <p>© 2022 Company, Inc. All rights reserved.</p>
         </div>
       </footer>

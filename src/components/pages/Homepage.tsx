@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import kids1 from "../../assets/kids-img-1.jpg";
 import kids2 from "../../assets/kids-img-2.jpg";
-import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import kidsteaching from "../../assets/kids-teaching.jpg";
 import "./styles/homepage.css";
 export const Homepage: React.FC = () => {
   return (
     <div className="container ">
-      <div id="carouselExampleIndicators" className="carousel slide">
+      <div
+        id="carouselExampleIndicators"
+        className="carousel slide homepage__carousel"
+      >
         <div className="carousel-indicators">
           <button
             type="button"
@@ -35,14 +36,14 @@ export const Homepage: React.FC = () => {
           <div className="carousel-item active">
             <img
               src={kids1}
-              style={{ height: "650px" }}
+              style={{ height: "350px" }}
               className="d-block w-100"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
-              style={{ height: "650px" }}
+              style={{ height: "350px" }}
               src={kids2}
               className="d-block w-100"
               alt="..."
@@ -84,11 +85,31 @@ export const Homepage: React.FC = () => {
             of AI
           </p>
         </div>
+        <br />
         <div className="col homepage__contentbtns">
           <button id="btn1">CHATGPT</button>
           <button id="btn2">OPENAI</button>
-          <button id="btn3">VOICE RECOGNITION</button>
-          <button id="btn4">SPEECH-TO-TEXT</button>
+          <button id="btn3">RLHF</button>
+          <button id="btn4">InstructGPT</button>
+        </div>
+        <br />
+      </div>
+      <div className="homepage__kids__content">
+        <div className="col">
+          <img
+            src={kidsteaching}
+            style={{ height: "300px", width: "350px", borderRadius: "25px" }}
+          />
+        </div>
+        <div className="col homepage__kids__content__text">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged
+          </p>
         </div>
       </div>
     </div>

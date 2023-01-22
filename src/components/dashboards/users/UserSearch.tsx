@@ -2,7 +2,10 @@ import React from "react";
 
 export const UserSearch: React.FC = () => {
   return (
-    <div className="userSearch__content container">
+    <div
+      style={{ marginTop: "30px" }}
+      className="userSearch__content container"
+    >
       <div className="userSearch__content__heading">
         <h5 style={{ display: "flex", justifyContent: "center" }}>
           Recent Searches

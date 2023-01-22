@@ -17,3 +17,9 @@
   background-color: red;
   color: whitesmoke;
 }
+
+@media only screen and (max-width: 576px) {
+  .footer__copyright__text {
+    margin-left: 30px;
+  }
+}

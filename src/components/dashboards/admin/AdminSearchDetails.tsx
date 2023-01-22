@@ -2,7 +2,7 @@ import React from "react";
 import bin from "../../../assets/bin.png";
 export const AdminSearchDetails: React.FC = () => {
   return (
-    <div className="admin__content container">
+    <div style={{ marginTop: "30px" }} className="admin__content container">
       <div className="admin__content__heading">
         <h5 style={{ display: "flex", justifyContent: "center" }}>
           Search Details

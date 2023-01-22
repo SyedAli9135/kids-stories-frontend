@@ -4,9 +4,13 @@ import user from "../../assets/user.png";
 import { Link } from "react-router-dom";
 export const Navbar: React.FC = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary shadow p-3  bg-white rounded">
-      <div className="container-fluid">
-        <a className="navbar-brand navbar__logo" href="#">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary shadow p-3  bg-white rounded navbar__background__gradient">
+      <div className="container-fluid navbar__container__main">
+        <a
+          style={{ color: "whitesmoke", fontWeight: "bolder" }}
+          className="navbar-brand navbar__logo"
+          href="#"
+        >
           LOGO
         </a>
         <button
@@ -53,14 +57,20 @@ export const Navbar: React.FC = () => {
               <ul className="dropdown-menu navbar__dropdown1">
                 <li>
                   <Link to="about">
-                    <a className="dropdown-item navbar__menu" href="#">
+                    <a
+                      className="dropdown-item navbar__menu__dropdowncolor"
+                      href="#"
+                    >
                       <button>About Us</button>
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link to="contact">
-                    <a className="dropdown-item navbar__menu" href="#">
+                    <a
+                      className="dropdown-item navbar__menu__dropdowncolor"
+                      href="#"
+                    >
                       <button>Contact Us</button>
                     </a>
                   </Link>
@@ -74,10 +84,7 @@ export const Navbar: React.FC = () => {
                 </a>
               </Link>
             </li>
-          </ul>
-
-          <form className="d-flex" role="search">
-            <div className="nav-item dropdown navbar__dropdown__user">
+            <li className="nav-item dropdown navbar__dropdown__user">
               <a
                 className="nav-link active dropdown-toggle navbar__menu"
                 href="#"
@@ -87,23 +94,29 @@ export const Navbar: React.FC = () => {
               >
                 <img src={user} height="30px" width="30px" />
               </a>
-              <ul className="dropdown-menu navbar__dropdown1">
+              <ul className="dropdown-menu navbar__dropdown__user">
                 <li>
                   <Link to="login">
-                    <a className="dropdown-item navbar__menu" href="#">
+                    <a
+                      className="dropdown-item navbar__menu__dropdowncolor__user"
+                      href="#"
+                    >
                       <button>Login</button>
                     </a>
                   </Link>
                 </li>
 
                 <li>
-                  <a className="dropdown-item navbar__menu" href="#">
+                  <a
+                    className="dropdown-item navbar__menu__dropdowncolor__user"
+                    href="#"
+                  >
                     <button>Logout</button>
                   </a>
                 </li>
               </ul>
-            </div>
-          </form>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

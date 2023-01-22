@@ -5,9 +5,30 @@
   flex-direction: column;
   margin-top: 30px;
 }
-
+.story__submittitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 617px) {
   .story__container {
     overflow: hidden;
   }
+}
+.story__generatedStory {
+  border-radius: 25px;
+  background: linear-gradient(to right, pink, blue);
+  color: whitesmoke;
+  font-weight: bolder;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .story__generatedStory {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.story__generatedStory > p {
+  padding: 10px;
 }

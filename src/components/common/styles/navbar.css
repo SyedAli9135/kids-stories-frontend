@@ -1,10 +1,18 @@
-.navbar__responsive__menu {
-  margin-left: 30px;
+/* .navbar__responsive__menu {
+  margin-right: 25%;
+} */
+.navbar__container__main {
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.navbar__logo {
-  margin-left: 100px;
+.navbar__background__gradient {
+  background: linear-gradient(to right, pink, blue);
 }
+.navbar__logo {
+  margin-left: 28%;
+}
+
 .navbar__toggler {
   margin-right: 75px;
 }
@@ -21,20 +29,46 @@
   margin-left: 15px;
   margin-right: 15px;
   font-size: 20px;
+  font-weight: bolder;
   border-radius: 12px;
+  background: none;
+  color: whitesmoke;
   border: none;
 }
 .navbar__menu > button:hover {
-  background-color: red;
-  color: white;
+  text-decoration: underline;
 }
-.navbar__dropdown__user {
-  margin-right: 100px;
+
+.navbar__dropdown1 {
+  margin-right: 10%;
+}
+.navbar__menu__dropdowncolor > button {
+  color: black;
+  border: none;
+  border-radius: 12px;
+  align-self: center;
+  margin-left: 20px;
+}
+.navbar__menu__dropdowncolor > button:hover {
+  background-color: red;
+  color: whitesmoke;
+}
+.navbar__menu__dropdowncolor__user > button {
+  color: black;
+  border: none;
+  border-radius: 12px;
+  align-self: center;
+  margin-left: 17px;
+  width: 100px;
+}
+.navbar__menu__dropdowncolor__user > button:hover {
+  background-color: red;
+  color: whitesmoke;
 }
 
 @media only screen and (max-width: 991px) {
   .navbar__responsive__menu {
-    margin-left: 100px !important;
+    margin-left: 40px !important;
   }
   .navbar__btn__login {
     margin-left: 100px !important;
@@ -43,12 +77,34 @@
     width: 30px;
   }
   .navbar__dropdown__user {
-    margin-left: 130px !important;
+    margin-left: 30px;
+    width: 30px;
   }
 }
 
 @media only screen and (min-width: 1063px) and (max-width: 991px) {
   .navbar__btn__login {
     margin-left: none !important;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .navbar__logo {
+    margin-left: 22%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .navbar__logo {
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .navbar__logo {
+    margin-left: 17%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .navbar__logo {
+    margin-left: 14%;
   }
 }

@@ -9,15 +9,15 @@ import { Routes, Route, Link } from "react-router-dom";
 export const AdminDashboard: React.FC = () => {
   return (
     <>
-      <div className="container">
+      <div>
         <ul
-          style={{ backgroundColor: "red", borderRadius: "20px" }}
+          style={{ backgroundColor: "whitesmoke", borderRadius: "20px" }}
           className="nav justify-content-center"
         >
           <li className="nav-item">
             <Link to="adminprofile">
               <a
-                style={{ color: "whitesmoke", fontSize: "20px" }}
+                style={{ color: "black", fontSize: "20px" }}
                 className="nav-link"
                 href="#"
               >
@@ -28,7 +28,7 @@ export const AdminDashboard: React.FC = () => {
           <li className="nav-item">
             <Link to="adminuserslist">
               <a
-                style={{ color: "whitesmoke", fontSize: "20px" }}
+                style={{ color: "black", fontSize: "20px" }}
                 className="nav-link"
                 href="#"
               >
@@ -39,7 +39,7 @@ export const AdminDashboard: React.FC = () => {
           <li className="nav-item">
             <Link to="adminsearchdetails">
               <a
-                style={{ color: "whitesmoke", fontSize: "20px" }}
+                style={{ color: "black", fontSize: "20px" }}
                 className="nav-link"
                 href="#"
               >

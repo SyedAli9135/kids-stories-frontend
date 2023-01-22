@@ -9,15 +9,15 @@ export const UserDashboard: React.FC = () => {
   const location = useLocation();
   return (
     <>
-      <div className="container">
+      <div>
         <ul
-          style={{ backgroundColor: "red", borderRadius: "20px" }}
+          style={{ backgroundColor: "whitesmoke", borderRadius: "20px" }}
           className="nav justify-content-center"
         >
           <li className="nav-item">
             <Link to="userprofile">
               <a
-                style={{ color: "whitesmoke", fontSize: "20px" }}
+                style={{ color: "black", fontSize: "20px" }}
                 className="nav-link"
                 href="#"
               >
@@ -28,7 +28,7 @@ export const UserDashboard: React.FC = () => {
           <li className="nav-item">
             <Link to="usersearch">
               <a
-                style={{ color: "whitesmoke", fontSize: "20px" }}
+                style={{ color: "black", fontSize: "20px" }}
                 className="nav-link"
                 href="#"
               >
